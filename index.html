@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.css" integrity="sha256-f83N12sqX/GO43Y7vXNt9MjrHkPc4yi9Uq9cLy1wGIU=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha256-rByPlHULObEjJ6XQxW/flG2r+22R5dKiAoef+aXWfik=" crossorigin="anonymous" />
+
+  </head>
+  <body>
+
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">Site Title</li>
+
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><a href="about.html" class="button generate_pdf">PDF erstellen</a></li>
+          <li><a href="about.html" class="button load_preset">jsontohtml</a></li>
+          <li><a href="about.html" class="button save_preset">htmltojson</a></li>
+          <li><a href="about.html" class="button bindtosite">x test</a></li>
+        </ul>
+      </div>
+    </div>
+<br />
+
+<div class="row expanded">
+
+  <div class="column clearer">
+    <div class="card">
+      <div class="card-divider">
+        This is a header
+      </div>
+      <div class="card-section">
+
+        <ul class="accordion" data-accordion  data-allow-all-closed="true">
+          <li class="accordion-item" data-accordion-item>
+            <a href="#" class="accordion-title">Seitenhintergrund</a>
+            <div class="accordion-content " data-tab-content>
+              <form>
+                  <div class="row ide">
+                      <div class="large-8  columns">
+                          Hintergrundfarbe
+                      </div>
+                      <div class= "large-4 columns ">
+                          <input class="float-right" type="color" name="color" id="background_color_picker" value="#ff0000" />
+                      </div>
+                  </div>
+
+                  <div class="row columns ide">
+                    Hintergrundbild
+                    <fieldset class="fieldset">
+                      <select class="image-picker" style="display:hidden;" id="page_background_images"></select>
+                    </fieldset>
+                  </div>
+
+                  <div class="row columns ide">
+                    Rahmenbild
+                    <fieldset class="fieldset">
+                      <select class="image-picker" style="display:hidden;" id="page_border_images"></select>
+                    </fieldset>
+                  </div>
+              </form>
+            </div>
+          </li>
+          <li class="accordion-item" data-accordion-item>
+            <a href="#" class="accordion-title">Accordion 1</a>
+            <div class="accordion-content" data-tab-content>
+                <div class="button tiny add_element" data-typ="text">Text</div>
+                <div class="button tiny add_element" data-typ="imagebox">Text</div>
+            </div>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+  </div>
+<div class="column align-self-top">
+  <div class="preset_title"></div>
+  <page class="page" size="A4">
+      <div id="background_frame"></div>
+      <div id="border_frame"></div>
+      <h1>asasdq23123123sd</h1>
+      <div>asasdq23123123sd</div>
+  </page>
+
+</div>
+
+<div class="column  clearer">
+  <div class="card">
+    <div class="card-divider">
+      This is a header
+    </div>
+    <div class="card-section">
+      <div id="project_viewer"></div>
+      <a href="#" class="add_new_preset">Add New</a>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<br />
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
+    <script src="bower_components/what-input/dist/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rasterizehtml/1.2.4/rasterizeHTML.allinone.js" integrity="sha256-pZEmKr6nnyKEWTBRyYkSQBzFdf+te+3G//uUM7fpqq8=" crossorigin="anonymous"></script>
+    <script src="https://npmcdn.com/draggabilly@2.1/dist/draggabilly.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js" integrity="sha256-c3RzsUWg+y2XljunEQS0LqWdQ04X1D3j22fd/8JCAKw=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.js" integrity="sha256-ZdnRjhC/+YiBbXTHIuJdpf7u6Jh5D2wD5y0SNRWDREQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/i18n/jquery.spectrum-de.min.js" integrity="sha256-ooIoEuTqrcw4lmufaIced2P2VJnMJyn/bk/zWiPETXc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-resize/1.1/jquery.ba-resize.min.js" integrity="sha256-yB+FMa+R5HU3QWCoX8AIv9YOOcJPsDyY6F/EmMq1NbE=" crossorigin="anonymous"></script>
+    <script src="js/image-picker.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <textarea rows="20"  id="jsoncode"></textarea>
+  </body>
+</html>
